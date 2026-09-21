@@ -1,0 +1,130 @@
+# ==============================================================================
+# RecallHub .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Environment Variables & Secrets
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.env
+*.env.local
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# ------------------------------------------------------------------------------
+# Python & Backend
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+
+# Python Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python Testing & Type Checking
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.mypy_cache/
+.pytype/
+.ruff_cache/
+
+# ------------------------------------------------------------------------------
+# Node & Frontend
+# ------------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Frontend Build Output
+frontend/dist/
+frontend/dist-ssr/
+frontend/build/
+*.tsbuildinfo
+
+# Frontend Testing
+coverage/
+playwright-report/
+test-results/
+blob-report/
+
+# ------------------------------------------------------------------------------
+# Database & File Uploads
+# ------------------------------------------------------------------------------
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# RecallHub User Uploads & Media
+uploads/
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# ------------------------------------------------------------------------------
+# IDEs & Editor Artifacts
+# ------------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ------------------------------------------------------------------------------
+# Operating System Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ------------------------------------------------------------------------------
+# Logs & Temporary Files
+# ------------------------------------------------------------------------------
+*.log
+logs/
+tmp/
+temp/
